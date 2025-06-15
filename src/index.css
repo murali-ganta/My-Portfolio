@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
+
+nav,
+body {
+  background-color: #edf2f6;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.initials-logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 32px;
+}
+
+.nav-links {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+.nav-links a {
+  font-size: 1.2em;
+}
+
+/* .nav-links a:hover {
+  color: #1d4ed8;
+} */
+
+.myInfo .name-text {
+  font-family: "Josefin Sans", sans-serif;
+  color: #1d4ed8;
+}
+
+.myInfo .role-text,
+.myInfo .role-desc {
+  font-family: "Josefin Sans", sans-serif;
+  color: #000000;
+}
+
+.myInfo .explore-btn {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #1d4ed8;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.myInfo .explore-btn:hover {
+  background-color: #2563eb;
+  scale: 1.05;
+  transition: background-color 0.3s ease, scale 0.3s ease;
+}
+
+/* .perspective {
+  perspective: 1000px;
+}
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+} */
