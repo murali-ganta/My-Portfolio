@@ -30,7 +30,7 @@ const Home = () => {
             Murali Ganta
           </h1>
           <span className="block text-indigo-200 tracking-widest font-semibold mt-2">
-            FULL STACK WEB DEVELOPER
+            UX/UI DESIGNER & FULL STACK WEB DEVELOPER
           </span>
 
           <p className="mt-6 mb-8 max-w-lg mx-auto md:mx-0 text-indigo-100 text-lg leading-relaxed">

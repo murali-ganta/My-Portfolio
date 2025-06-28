@@ -1,32 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profileImage from "../assets/Profile-Image.png";
+// import profileImage from "../assets/Profile-Image.png";
 
 const About = () => {
   return (
     <div className="py-16 px-4 bg-indigo-50 text-indigo-900">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Profile Image */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="flex justify-center"
-        >
-          <div className="w-64 h-full overflow-hidden">
-            <img
-              src={profileImage}
-              alt="Profile"
-              className="w-full h-full object-cover transform"
-            />
-          </div>
-        </motion.div>
-
+      <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
         {/* Text Content */}
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
@@ -43,7 +26,7 @@ const About = () => {
             into intuitive, high-impact user experiences.
           </p>
 
-          <div className="flex flex-wrap gap-3 mb-6">
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
             {["React", "Node.js", "Tailwind CSS", "MongoDB", "TypeScript"].map(
               (skill) => (
                 <span
@@ -55,7 +38,7 @@ const About = () => {
               )
             )}
           </div>
-
+          {/* 
           <a
             href="/resume.pdf"
             target="_blank"
@@ -63,7 +46,7 @@ const About = () => {
             className="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg hover:bg-indigo-100 transition shadow"
           >
             Download Resume
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </div>
